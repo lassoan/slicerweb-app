@@ -1,0 +1,264 @@
+{
+ "extensions": [
+  {
+   "name": "MarkupsToModel",
+   "homepage": "https://github.com/SlicerIGT/MarkupsToModel",
+   "category": "Informatics",
+   "contributors": [
+    "Thomas Vaughan (PerkLab, Queen's University)",
+    "Andras Lasso (PerkLab, Queen's University)",
+    "Adam Rankin (Robarts Research Center, Western University)",
+    "Aniqah Mair (PerkLab, Queen's University)",
+    "Jaime Garcia Guevara (PerkLab, Queen's University)"
+   ],
+   "description": "Create tube or closed surface models from points of a markup fiducial node.",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/SlicerIGT/SlicerMarkupsToModel/raw/master/ClosedSurface.png",
+    "https://github.com/SlicerIGT/SlicerMarkupsToModel/raw/master/Curve.png"
+   ],
+   "icon": "https://github.com/SlicerIGT/SlicerMarkupsToModel/raw/master/MarkupsToModel.png",
+   "revision": "0be642172c",
+   "modules": [
+    "MarkupsToModel"
+   ],
+   "version": "0be642172c",
+   "wheel": "slicer_ext_markupstomodel-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerHeart",
+   "homepage": "https://github.com/SlicerHeart/SlicerHeart#readme",
+   "category": "Cardiac",
+   "contributors": [
+    "Andras Lasso (PerkLab, Queen's University)",
+    "Steve Pieper (Isomics)",
+    "Adam Rankin (Robarts)",
+    "Csaba Pinter (Pixel Medical / Ebatinca)",
+    "Christian Herz (CHOP)",
+    "Matthew Jolley (CHOP/UPenn)"
+   ],
+   "description": "Modules for cardiac analysis and intervention planning and guidance",
+   "status": "Beta",
+   "depends": [
+    "SlicerIGT",
+    "MarkupsToModel"
+   ],
+   "screenshots": [
+    "https://github.com/SlicerHeart/SlicerHeart/raw/master/Docs/Image3dApiExample.png",
+    "https://img.youtube.com/vi/hIxr9OKBvQ8/0.jpg",
+    "https://raw.githubusercontent.com/SlicerHeart/SlicerHeart/master/ValveQuantification/Resources/MeasurementPreset/MitralValve.png"
+   ],
+   "icon": "https://github.com/SlicerHeart/SlicerHeart/raw/master/SlicerHeart.png",
+   "revision": "eae1bea99f",
+   "modules": [
+    "AnnulusShapeAnalyzer",
+    "AsdVsdDeviceSimulator",
+    "BafflePlanner",
+    "CardiacDeviceSimulator",
+    "CartoExport",
+    "DicomUltrasoundPlugin",
+    "EAMapReader",
+    "EchoVolumeRender",
+    "FEBioMeshIO",
+    "FluoroFlowCalculator",
+    "GeUsMovieReader",
+    "ImportExportSimulationModel",
+    "ImportMimics",
+    "KretzFileReader",
+    "LeafletAnalysis",
+    "LeafletMoldGenerator",
+    "OrificeArea",
+    "PDAQuantification",
+    "Philips4dUsDicomPatcher",
+    "Reconstruct4DCineMRI",
+    "TCAVValveSimulator",
+    "TomTecUcdPlugin",
+    "ValveAnnulusAnalysis",
+    "ValveBatchExport",
+    "ValveClipDeviceSimulator",
+    "ValveFemExport",
+    "ValveMoldCreator",
+    "ValvePapillaryAnalysis",
+    "ValveQuantification",
+    "ValveSegmentation",
+    "ValveView",
+    "VirtualCathLab"
+   ],
+   "version": "eae1bea99f",
+   "wheel": "slicer_ext_slicerheart-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerIGSIO",
+   "homepage": "https://github.com/IGSIO/SlicerIGSIO",
+   "category": "IGT",
+   "contributors": [
+    "Kyle Sunderland (PerkLab, Queen's University)",
+    "Andras Lasso (PerkLab, Queen's University)"
+   ],
+   "description": "This is a utility extension that is developed as part of the Image Guided Surgery InterOperability (IGSIO) organization (see http://igsio.github.io/), and should be used as a dependency for other extensions (Ex. SlicerIGT) to provide access to tools and algorithms implemented by IGSIO (https://github.com/IGSIO/IGSIO).",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/IGSIO/SlicerIGSIO/raw/master/Images/SlicerIGSIOScreenshot1.png"
+   ],
+   "icon": "https://github.com/IGSIO/SlicerIGSIO/raw/master/SlicerIGSIO.png",
+   "revision": "1a89776c9f",
+   "modules": [
+    "MetafileImporter",
+    "SequenceIO",
+    "VideoUtil"
+   ],
+   "version": "1a89776c9f",
+   "wheel": "slicer_ext_slicerigsio-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerIGT",
+   "homepage": "https://www.slicerigt.org",
+   "category": "IGT",
+   "contributors": [
+    "Tamas Ungi (Queen's University)",
+    "Junichi Tokuda (Brigham and Women's Hospital)",
+    "Andras Lasso (Queen's University)",
+    "Isaiah Norton (Brigham and Women's Hospital)",
+    "Matthew Holden (Queen's University)",
+    "Laurent Chauvin (SNR)",
+    "Atsushi Yamada (SNR)",
+    "Franklin King (Queen's University)",
+    "Jaime Garcia-Guevara (Queen's University)",
+    "Amelie Meyer (Queen's University)",
+    "Mikael Brudfors (UCL)",
+    "Adam Rankin (Robarts Research Institute)"
+   ],
+   "description": "This extension contains modules that enable rapid prototyping of applications for image-guided interventions. Intended users should have real-time imaging and/or tracking hardware (e.g. tracked ultrasound) connected to 3D Slicer through OpenIGTLink network. Specific modules allow patient registration to the navigation coordinate system in 3D Slicer, and real-time update of tracked models and images.",
+   "depends": [
+    "SlicerIGSIO"
+   ],
+   "screenshots": [
+    "https://www.slicer.org/slicerWiki/images/7/78/SlicerIGTScreenshot.png"
+   ],
+   "icon": "https://www.slicer.org/slicerWiki/images/2/2b/SlicerIGTLogo.png",
+   "revision": "42091cddf6",
+   "modules": [
+    "BreachWarning",
+    "CollectPoints",
+    "CreateModels",
+    "FiducialRegistrationWizard",
+    "FiducialsToModelRegistration",
+    "LandmarkDetection",
+    "ModelRegistration",
+    "PathExplorer",
+    "PivotCalibration",
+    "SequenceReplay",
+    "TextureModel",
+    "TransformProcessor",
+    "UltrasoundSnapshots",
+    "Viewpoint",
+    "VolumeReconstruction",
+    "VolumeResliceDriver",
+    "Watchdog"
+   ],
+   "version": "42091cddf6",
+   "wheel": "slicer_ext_slicerigt-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerRT",
+   "homepage": "https://slicerrt.org",
+   "category": "Radiotherapy",
+   "contributors": [
+    "Csaba Pinter (PerkLab, Queen's University)",
+    "Andras Lasso (PerkLab, Queen's University)",
+    "Greg Sharp (Massachusetts General Hospital)",
+    "Kevin Wang (Radiation Medicine Program, Princess Margaret Hospital, University Health Network Toronto)"
+   ],
+   "description": "Toolkit for radiation therapy research. Features include DICOM-RT import/export, dose volume histogram, dose accumulation, external beam planning (TPS), structure comparison, isodose line/surface generation, etc. Version ${SLICERRT_VERSION}",
+   "status": "Beta",
+   "depends": [],
+   "screenshots": [
+    "https://www.slicer.org/slicerWiki/images/8/87/SlicerRT_0.10_IsocenterShiftingEvaluation.png",
+    "https://www.slicer.org/slicerWiki/images/e/ef/SlicerRT_0.11_ProstateLoaded_Beams_ThresholdedDose.png",
+    "https://www.slicer.org/slicerWiki/images/4/40/SlicerRtFundingSources.png"
+   ],
+   "icon": "https://www.slicer.org/slicerWiki/images/2/29/SlicerRT_Logo_3.0_128x128.png",
+   "revision": "a884e7c4f6",
+   "modules": [
+    "BatchStructureSetConversion",
+    "DoseAccumulation",
+    "DoseVolumeHistogram",
+    "DosxyzNrc3dDoseFileReader",
+    "DvhComparison",
+    "Isodose",
+    "PlanarImage",
+    "PlmRegister",
+    "VffFileReader"
+   ],
+   "version": "a884e7c4f6",
+   "wheel": "slicer_ext_slicerrt-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SimVascular",
+   "homepage": "https://github.com/SimVascular/SlicerSimVascular",
+   "contributors": [
+    "Alison Marsden (Cardiovascular Biomechanics Computation Lab, Stanford University)",
+    "Bohan Jeff Li (Cardiovascular Biomechanics Computation Lab, Stanford University)"
+   ],
+   "description": "SimVascular extensions developed by Marsden lab members and associates for 3D Slicer.",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/SimVascular/SlicerSimVascular/raw/main/Docs/SDFStent01.jpg",
+    "https://github.com/SimVascular/SlicerSimVascular/raw/main/Docs/SDFStent02.jpg"
+   ],
+   "icon": "https://github.com/SimVascular/SlicerSimVascular/raw/main/SimVascular.png",
+   "pythonPackages": [
+    "scipy"
+   ],
+   "revision": "be90339c18",
+   "modules": [
+    "PaintModel",
+    "SDFStent"
+   ],
+   "version": "be90339c18",
+   "wheel": "slicer_ext_slicersimvascular-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerVMTK",
+   "homepage": "https://github.com/vmtk/SlicerExtension-VMTK",
+   "category": "Vascular Modeling Toolkit",
+   "contributors": [
+    "Daniel Haehn (Boston Childrens Hospital)",
+    "Luca Antiga (Orobix)",
+    "Steve Pieper (Isomics)",
+    "Jean-Christophe Fillion-Robin (Kitware)"
+   ],
+   "description": "Vascular Modeling Toolkit for vessel tree segmentation and centerline extraction.",
+   "status": "Beta",
+   "depends": [
+    "ExtraMarkups"
+   ],
+   "screenshots": [
+    "https://www.nitrc.org/project/screenshot.php?group_id=196&screenshot_id=126",
+    "https://www.nitrc.org/project/screenshot.php?group_id=196&screenshot_id=227",
+    "https://www.nitrc.org/project/screenshot.php?group_id=196&screenshot_id=228",
+    "https://www.nitrc.org/project/screenshot.php?group_id=196&screenshot_id=229"
+   ],
+   "icon": "https://www.nitrc.org/project/screenshot.php?group_id=196&screenshot_id=269",
+   "revision": "0f324d84b7",
+   "modules": [
+    "ArterialCalcificationPreProcessor",
+    "BranchClipper",
+    "CenterlineDisassembly",
+    "CenterlineJunctionAngles",
+    "CfdMeshGenerator",
+    "ClipVessel",
+    "ExtractCenterline",
+    "GuidedArterySegmentation",
+    "GuidedVeinSegmentation",
+    "LevelSetSegmentation",
+    "QuickArterySegmentation",
+    "StenosisMeasurement1D",
+    "StenosisMeasurement2D",
+    "VesselnessFiltering"
+   ],
+   "version": "0f324d84b7",
+   "wheel": "slicer_ext_slicervmtk-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  }
+ ]
+}
