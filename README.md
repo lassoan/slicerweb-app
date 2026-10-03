@@ -8,8 +8,14 @@ This branch is the configuration of the build, a SlicerWeb *deployment*
 itself is on the branch `deploy/latest`, which GitHub Pages serves. That branch holds one build and
 no history: each build replaces the last one.
 
-- `extensions.json`: the extensions of SlicerWeb the application bundles, by name - SlicerWeb's
-  `extensions/` describes them, so they follow SlicerWeb.
+- `application.json`: the configuration of the application:
+  - `extensions.slicerweb`: the extensions of SlicerWeb it bundles, by name - SlicerWeb's
+    `extensions/` describes them, so they follow SlicerWeb;
+  - `extensions.folder`: the folder of description files of its own (`extensions`);
+  - `features`: `developerMode` (`enabledByDefault`, `disabledByDefault`, or `unavailable`: off and
+    not offered in the settings), `pythonConsole` and `extensionsManager` (`true` or `false`).
+
+  A change of `features` needs no build: `deploy` takes it as it is.
 - `extensions/*.json`: other extensions, as Slicer ExtensionsIndex description files (none yet). A
   file here named as one of SlicerWeb takes its place (to build it at another revision, say). The
   site is public: their sources must be public too.
@@ -39,7 +45,7 @@ with `gh auth login` (`slicerweb.bat` instead of `python slicerweb.py` on Window
 | | |
 |---|---|
 | `python slicerweb.py <settings> build` | builds everything: SlicerWeb as its checkout is (update it first), and the extensions. Each part is redone only if it changed: minutes, or hours when VTK, ITK or Slicer moved |
-| `python slicerweb.py <settings> build extensions` | builds only the extensions; `build SlicerIGT SlicerRT` only the ones named (in `extensions.json` or `extensions/`) |
+| `python slicerweb.py <settings> build extensions` | builds only the extensions; `build SlicerIGT SlicerRT` only the ones named (in `application.json` or `extensions/`) |
 | `python slicerweb.py <settings> serve` | serves the build at http://localhost:4176/ (`SW_PORT`) to try it; Ctrl+C stops it |
 | `python slicerweb.py <settings> stop` | stops that server, also one that has no window to press Ctrl+C in |
 | `python slicerweb.py <settings> deploy [channel]` | publishes the build - nothing is built here - to the channel: `latest` by default (branch `deploy/<channel>`) |

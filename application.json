@@ -1,0 +1,27 @@
+{
+  "extensions": {
+    "slicerweb": [
+      "ExtraMarkups",
+      "MarkupsToModel",
+      "RawImageGuess",
+      "Sandbox",
+      "SegmentEditorExtraEffects",
+      "SimVascular",
+      "SlicerHeart",
+      "SlicerIGSIO",
+      "SlicerIGT",
+      "SlicerOpenAnatomy",
+      "SlicerRT",
+      "SlicerVMTK",
+      "SurfaceMarkup",
+      "SurfaceWrapSolidify",
+      "VolumeClip"
+    ],
+    "folder": "extensions"
+  },
+  "features": {
+    "developerMode": "enabledByDefault",
+    "pythonConsole": true,
+    "extensionsManager": true
+  }
+}

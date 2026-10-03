@@ -1,5 +1,5 @@
 # Publish the SlicerWeb application, https://lassoan.github.io/slicerweb-app/: SlicerWeb with the
-# extensions of extensions.json (by name) and of extensions/.
+# configuration and extensions of application.json.
 #
 # Each channel - latest, or another such as stable or 1.0.0 - is published to a branch of its own,
 # deploy/<channel>, from a runtime release of its own, runtime-<channel>. GitHub Pages serves
