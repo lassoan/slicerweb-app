@@ -1,0 +1,490 @@
+{
+ "extensions": [
+  {
+   "name": "ExtraMarkups",
+   "homepage": "https://github.com/chir-set/SlicerExtraMarkups/",
+   "category": "Utilities",
+   "contributors": [
+    "Saleem Edah-Tally ([Surgeon] [Hobbyist developer])"
+   ],
+   "description": "This extension adds a <i>Label</i> markups node that draws an arrow with a text label, and a <i>Shape</i> markups node that can draw defined primitive shapes (circle, cone...). The result is controlled by placing usual control points in slice views and 3D views. Each object can be saved in scene and reloaded.",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Label/Label_0.png",
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Shape/Cone_0.png",
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Shape/Cylinder_0.png",
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Shape/Disk_0.png",
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Shape/Ring_0.png",
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Shape/Sphere_0.png",
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Shape/Tube_0.png",
+    "https://github.com/chir-set/SlicerExtraMarkups/raw/main/Shape/Arc_0.png"
+   ],
+   "icon": "https://github.com/chir-set/SlicerExtraMarkups/raw/main/ExtraMarkups.png",
+   "revision": "113db89db5",
+   "modules": [
+    "Label",
+    "Shape"
+   ],
+   "version": "113db89db5",
+   "wheel": "slicer_ext_extramarkups-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "MarkupsToModel",
+   "homepage": "https://github.com/SlicerIGT/MarkupsToModel",
+   "category": "Informatics",
+   "contributors": [
+    "Thomas Vaughan (PerkLab, Queen's University)",
+    "Andras Lasso (PerkLab, Queen's University)",
+    "Adam Rankin (Robarts Research Center, Western University)",
+    "Aniqah Mair (PerkLab, Queen's University)",
+    "Jaime Garcia Guevara (PerkLab, Queen's University)"
+   ],
+   "description": "Create tube or closed surface models from points of a markup fiducial node.",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/SlicerIGT/SlicerMarkupsToModel/raw/master/ClosedSurface.png",
+    "https://github.com/SlicerIGT/SlicerMarkupsToModel/raw/master/Curve.png"
+   ],
+   "icon": "https://github.com/SlicerIGT/SlicerMarkupsToModel/raw/master/MarkupsToModel.png",
+   "revision": "0be642172c",
+   "modules": [
+    "MarkupsToModel"
+   ],
+   "version": "0be642172c",
+   "wheel": "slicer_ext_markupstomodel-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "RawImageGuess",
+   "homepage": "https://github.com/acetylsalicyl/SlicerRawImageGuess",
+   "category": "Informatics",
+   "contributors": [
+    "Attila Nagy (University of Szeged, Szeged, Hungary)",
+    "Csaba Pinter (Queen's University, Kingston, Ontario, Canada)",
+    "Andras Lasso (Queen's University, Kingston, Ontario, Canada)",
+    "Steve Pieper (Isomics Inc., Cambridge, MA, USA)"
+   ],
+   "description": "This extension allows loading images from unknown file formats. Image dimensions, bit depth, etc. parameters can be determined by trial and error, based on live preview.",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/acetylsalicyl/SlicerRawImageGuess/raw/master/Screenshot01.png",
+    "https://github.com/acetylsalicyl/SlicerRawImageGuess/raw/master/Screenshot02.png"
+   ],
+   "icon": "https://github.com/acetylsalicyl/SlicerRawImageGuess/raw/master/RawImageGuess.png",
+   "revision": "b67fc693d9",
+   "modules": [
+    "RawImageGuess"
+   ],
+   "version": "b67fc693d9",
+   "wheel": "slicer_ext_rawimageguess-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "Sandbox",
+   "homepage": "https://github.com/PerkLab/SlicerSandbox",
+   "category": "Examples",
+   "contributors": [
+    "Csaba Pinter (Queen's University)",
+    "Andras Lasso (Queen's University)"
+   ],
+   "description": "Collection of utilities that are not polished implementations but can be useful to users",
+   "depends": [],
+   "screenshots": [
+    "https://raw.githubusercontent.com/PerkLab/SlicerSandbox/master/RemovePatientTable.jpg",
+    "https://raw.githubusercontent.com/PerkLab/SlicerSandbox/master/Lights.jpg"
+   ],
+   "icon": "https://github.com/PerkLab/SlicerSandbox/raw/master/Sandbox_Logo_128.png",
+   "revision": "7211da97bf",
+   "modules": [
+    "AutoSave",
+    "CharacterizeTransformMatrix",
+    "ColorizeVolume",
+    "CombineModels",
+    "CurvedPlanarReformat",
+    "DocumentationTools",
+    "ImportNumPyArray",
+    "ImportOCT",
+    "ImportOpenInventor",
+    "ImportOsirixROI",
+    "ImportSliceOmatic",
+    "JoystickControl",
+    "Lights",
+    "LoadRemoteFile",
+    "RemoveCtTable",
+    "SceneRecorder",
+    "SegmentCrossSectionArea",
+    "Slicey",
+    "StitchVolumes",
+    "StyleTester",
+    "UserStatistics",
+    "VolumeRenderingSpecialEffects"
+   ],
+   "version": "7211da97bf",
+   "wheel": "slicer_ext_sandbox-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SegmentEditorExtraEffects",
+   "homepage": "https://github.com/lassoan/SlicerSegmentEditorExtraEffects",
+   "category": "Segmentation",
+   "contributors": [
+    "Andras Lasso (PerkLab, Queen's)",
+    "Kyle MacNeil (Med-i Lab, Queen's; SPL, BWH)",
+    "Andrey Fedorov (SPL, BWH)"
+   ],
+   "description": "Experimental effects for Segment Editor",
+   "depends": [
+    "MarkupsToModel"
+   ],
+   "screenshots": [
+    "https://raw.githubusercontent.com/lassoan/SlicerSegmentEditorExtraEffects/master/FastMarchingInput.png",
+    "https://raw.githubusercontent.com/lassoan/SlicerSegmentEditorExtraEffects/master/FastMarchingOutput.png",
+    "https://raw.githubusercontent.com/lassoan/SlicerSegmentEditorExtraEffects/master/WatershedOutput.png"
+   ],
+   "icon": "https://raw.githubusercontent.com/lassoan/SlicerSegmentEditorExtraEffects/master/SegmentEditorExtraEffects.png",
+   "revision": "36a5f2987a",
+   "modules": [
+    "SegmentEditorDrawTube",
+    "SegmentEditorEngrave",
+    "SegmentEditorFastMarching",
+    "SegmentEditorFloodFilling",
+    "SegmentEditorLocalThreshold",
+    "SegmentEditorSplitVolume",
+    "SegmentEditorSurfaceCut",
+    "SegmentEditorWatershed"
+   ],
+   "version": "36a5f2987a",
+   "wheel": "slicer_ext_segmenteditorextraeffects-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SimVascular",
+   "homepage": "https://github.com/SimVascular/SlicerSimVascular",
+   "contributors": [
+    "Alison Marsden (Cardiovascular Biomechanics Computation Lab, Stanford University)",
+    "Bohan Jeff Li (Cardiovascular Biomechanics Computation Lab, Stanford University)"
+   ],
+   "description": "SimVascular extensions developed by Marsden lab members and associates for 3D Slicer.",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/SimVascular/SlicerSimVascular/raw/main/Docs/SDFStent01.jpg",
+    "https://github.com/SimVascular/SlicerSimVascular/raw/main/Docs/SDFStent02.jpg"
+   ],
+   "icon": "https://github.com/SimVascular/SlicerSimVascular/raw/main/SimVascular.png",
+   "pythonPackages": [
+    "scipy"
+   ],
+   "revision": "be90339c18",
+   "modules": [
+    "PaintModel",
+    "SDFStent"
+   ],
+   "version": "be90339c18",
+   "wheel": "slicer_ext_simvascular-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerHeart",
+   "homepage": "https://github.com/SlicerHeart/SlicerHeart#readme",
+   "category": "Cardiac",
+   "contributors": [
+    "Andras Lasso (PerkLab, Queen's University)",
+    "Steve Pieper (Isomics)",
+    "Adam Rankin (Robarts)",
+    "Csaba Pinter (Pixel Medical / Ebatinca)",
+    "Christian Herz (CHOP)",
+    "Matthew Jolley (CHOP/UPenn)"
+   ],
+   "description": "Modules for cardiac analysis and intervention planning and guidance",
+   "status": "Beta",
+   "depends": [
+    "SlicerIGT",
+    "MarkupsToModel"
+   ],
+   "screenshots": [
+    "https://github.com/SlicerHeart/SlicerHeart/raw/master/Docs/Image3dApiExample.png",
+    "https://img.youtube.com/vi/hIxr9OKBvQ8/0.jpg",
+    "https://raw.githubusercontent.com/SlicerHeart/SlicerHeart/master/ValveQuantification/Resources/MeasurementPreset/MitralValve.png"
+   ],
+   "icon": "https://github.com/SlicerHeart/SlicerHeart/raw/master/SlicerHeart.png",
+   "pythonPackages": [
+    "pillow",
+    "pydicom"
+   ],
+   "revision": "432e350c8a",
+   "modules": [
+    "AnnulusShapeAnalyzer",
+    "AsdVsdDeviceSimulator",
+    "BafflePlanner",
+    "CardiacDeviceSimulator",
+    "CartoExport",
+    "DicomUltrasoundPlugin",
+    "EAMapReader",
+    "EchoVolumeRender",
+    "FEBioMeshIO",
+    "FluoroFlowCalculator",
+    "GeUsMovieReader",
+    "ImportExportSimulationModel",
+    "ImportMimics",
+    "KretzFileReader",
+    "LeafletAnalysis",
+    "LeafletMoldGenerator",
+    "OrificeArea",
+    "PDAQuantification",
+    "Philips4dUsDicomPatcher",
+    "Reconstruct4DCineMRI",
+    "TCAVValveSimulator",
+    "TomTecUcdPlugin",
+    "ValveAnnulusAnalysis",
+    "ValveBatchExport",
+    "ValveClipDeviceSimulator",
+    "ValveFemExport",
+    "ValveMoldCreator",
+    "ValvePapillaryAnalysis",
+    "ValveQuantification",
+    "ValveSegmentation",
+    "ValveView",
+    "VirtualCathLab"
+   ],
+   "version": "432e350c8a",
+   "wheel": "slicer_ext_slicerheart-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerIGSIO",
+   "homepage": "https://github.com/IGSIO/SlicerIGSIO",
+   "category": "IGT",
+   "contributors": [
+    "Kyle Sunderland (PerkLab, Queen's University)",
+    "Andras Lasso (PerkLab, Queen's University)"
+   ],
+   "description": "This is a utility extension that is developed as part of the Image Guided Surgery InterOperability (IGSIO) organization (see http://igsio.github.io/), and should be used as a dependency for other extensions (Ex. SlicerIGT) to provide access to tools and algorithms implemented by IGSIO (https://github.com/IGSIO/IGSIO).",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/IGSIO/SlicerIGSIO/raw/master/Images/SlicerIGSIOScreenshot1.png"
+   ],
+   "icon": "https://github.com/IGSIO/SlicerIGSIO/raw/master/SlicerIGSIO.png",
+   "revision": "6e02018628",
+   "modules": [
+    "MetafileImporter",
+    "SequenceIO",
+    "VideoUtil"
+   ],
+   "version": "6e02018628",
+   "wheel": "slicer_ext_slicerigsio-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerIGT",
+   "homepage": "https://www.slicerigt.org",
+   "category": "IGT",
+   "contributors": [
+    "Tamas Ungi (Queen's University)",
+    "Junichi Tokuda (Brigham and Women's Hospital)",
+    "Andras Lasso (Queen's University)",
+    "Isaiah Norton (Brigham and Women's Hospital)",
+    "Matthew Holden (Queen's University)",
+    "Laurent Chauvin (SNR)",
+    "Atsushi Yamada (SNR)",
+    "Franklin King (Queen's University)",
+    "Jaime Garcia-Guevara (Queen's University)",
+    "Amelie Meyer (Queen's University)",
+    "Mikael Brudfors (UCL)",
+    "Adam Rankin (Robarts Research Institute)"
+   ],
+   "description": "This extension contains modules that enable rapid prototyping of applications for image-guided interventions. Intended users should have real-time imaging and/or tracking hardware (e.g. tracked ultrasound) connected to 3D Slicer through OpenIGTLink network. Specific modules allow patient registration to the navigation coordinate system in 3D Slicer, and real-time update of tracked models and images.",
+   "depends": [
+    "SlicerIGSIO"
+   ],
+   "screenshots": [
+    "https://raw.githubusercontent.com/SlicerIGT/SlicerIGT/master/SlicerIGTScreenshot.png"
+   ],
+   "icon": "https://raw.githubusercontent.com/SlicerIGT/SlicerIGT/master/SlicerIGTLogo.png",
+   "revision": "908a6c9d5e",
+   "modules": [
+    "BreachWarning",
+    "CollectPoints",
+    "CreateModels",
+    "FiducialRegistrationWizard",
+    "FiducialsToModelRegistration",
+    "LandmarkDetection",
+    "ModelRegistration",
+    "PathExplorer",
+    "PivotCalibration",
+    "SequenceReplay",
+    "TextureModel",
+    "TransformProcessor",
+    "UltrasoundSnapshots",
+    "Viewpoint",
+    "VolumeReconstruction",
+    "VolumeResliceDriver",
+    "Watchdog"
+   ],
+   "version": "908a6c9d5e",
+   "wheel": "slicer_ext_slicerigt-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerOpenAnatomy",
+   "homepage": "https://github.com/PerkLab/SlicerOpenAnatomy",
+   "category": "Segmentation",
+   "contributors": [
+    "Andras Lasso (PerkLab)",
+    "Csaba Pinter (PerkLab)",
+    "Michael Halle (SPL)"
+   ],
+   "description": "3D Slicer extension for exporting Slicer scenes to use in the OpenAnatomy.org browser",
+   "depends": [],
+   "screenshots": [
+    "https://raw.githubusercontent.com/PerkLab/SlicerOpenAnatomy/master/OpenAnatomyExport/img/Screenshot01.png",
+    "https://raw.githubusercontent.com/PerkLab/SlicerOpenAnatomy/master/OpenAnatomyExport/img/Screenshot02.png",
+    "https://raw.githubusercontent.com/PerkLab/SlicerOpenAnatomy/master/OpenAnatomyExport/img/Screenshot03.png"
+   ],
+   "icon": "https://raw.githubusercontent.com/PerkLab/SlicerOpenAnatomy/master/SlicerOpenAnatomy.png",
+   "revision": "f6271147b9",
+   "modules": [
+    "AtlasEditor",
+    "OpenAnatomyExport"
+   ],
+   "version": "f6271147b9",
+   "wheel": "slicer_ext_sliceropenanatomy-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerRT",
+   "homepage": "https://slicerrt.org",
+   "category": "Radiotherapy",
+   "contributors": [
+    "Csaba Pinter (PerkLab, Queen's University)",
+    "Andras Lasso (PerkLab, Queen's University)",
+    "Greg Sharp (Massachusetts General Hospital)",
+    "Kevin Wang (Radiation Medicine Program, Princess Margaret Hospital, University Health Network Toronto)"
+   ],
+   "description": "Toolkit for radiation therapy research. Features include DICOM-RT import/export, dose volume histogram, dose accumulation, external beam planning (TPS), structure comparison, isodose line/surface generation, etc. Version ${SLICERRT_VERSION}",
+   "status": "Beta",
+   "depends": [],
+   "screenshots": [
+    "https://raw.githubusercontent.com/SlicerRt/SlicerRT/master/Docs/SlicerRT_0.10_IsocenterShiftingEvaluation.png",
+    "https://raw.githubusercontent.com/SlicerRt/SlicerRT/master/Docs/SlicerRT_0.11_ProstateLoaded_Beams_ThresholdedDose.png",
+    "https://raw.githubusercontent.com/SlicerRt/SlicerRT/master/Docs/SlicerRtFundingSources.png"
+   ],
+   "icon": "https://raw.githubusercontent.com/SlicerRt/SlicerRT/master/SlicerRT.png",
+   "revision": "3b6ce695aa",
+   "modules": [
+    "BatchStructureSetConversion",
+    "DoseAccumulation",
+    "DoseVolumeHistogram",
+    "DosxyzNrc3dDoseFileReader",
+    "DvhComparison",
+    "Isodose",
+    "PlanarImage",
+    "PlmRegister",
+    "VffFileReader"
+   ],
+   "version": "3b6ce695aa",
+   "wheel": "slicer_ext_slicerrt-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SlicerVMTK",
+   "homepage": "https://github.com/vmtk/SlicerExtension-VMTK",
+   "category": "Vascular Modeling Toolkit",
+   "contributors": [
+    "Daniel Haehn (Boston Childrens Hospital)",
+    "Luca Antiga (Orobix)",
+    "Steve Pieper (Isomics)",
+    "Jean-Christophe Fillion-Robin (Kitware)"
+   ],
+   "description": "Vascular Modeling Toolkit for vessel tree segmentation and centerline extraction.",
+   "status": "Beta",
+   "depends": [
+    "ExtraMarkups"
+   ],
+   "screenshots": [
+    "https://raw.githubusercontent.com/vmtk/SlicerExtension-VMTK/master/Docs/SlicerVMTK_Screenshot_1.png",
+    "https://raw.githubusercontent.com/vmtk/SlicerExtension-VMTK/master/Docs/SlicerVMTK_Screenshot_2.png",
+    "https://raw.githubusercontent.com/vmtk/SlicerExtension-VMTK/master/Docs/SlicerVMTK_Screenshot_3.png",
+    "https://raw.githubusercontent.com/vmtk/SlicerExtension-VMTK/master/Docs/SlicerVMTK_Screenshot_4.png"
+   ],
+   "icon": "https://raw.githubusercontent.com/vmtk/SlicerExtension-VMTK/master/SlicerVMTK.png",
+   "revision": "8491fa9d7c",
+   "modules": [
+    "ArterialCalcificationPreProcessor",
+    "BranchClipper",
+    "CenterlineDisassembly",
+    "CenterlineJunctionAngles",
+    "CfdMeshGenerator",
+    "ClipVessel",
+    "CrossSectionAnalysis",
+    "EditCenterline",
+    "ExtractCenterline",
+    "GuidedArterySegmentation",
+    "GuidedVeinSegmentation",
+    "LevelSetSegmentation",
+    "QuickArterySegmentation",
+    "StenosisMeasurement1D",
+    "StenosisMeasurement2D",
+    "StenosisMeasurement3D",
+    "VesselnessFiltering"
+   ],
+   "version": "8491fa9d7c",
+   "wheel": "slicer_ext_slicervmtk-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SurfaceMarkup",
+   "homepage": "https://github.com/SlicerHeart/SlicerSurfaceMarkup/tree/master",
+   "category": "Informatics",
+   "contributors": [
+    "Csaba Pinter (Pixel Medical / Ebatinca)",
+    "Rafael Palomar (Oslo University Hospital / NTNU)",
+    "Andras Lasso (PerkLab, Queen's)"
+   ],
+   "description": "3D Slicer extension adding a new markup type for grid based surfaces such as NURBS or B\u00e9zier surfaces.",
+   "depends": [],
+   "screenshots": [
+    "https://github.com/SlicerHeart/SlicerSurfaceMarkup/raw/master/Screenshots/NURBS.png",
+    "https://github.com/SlicerHeart/SlicerSurfaceMarkup/raw/master/Screenshots/Bezier.png"
+   ],
+   "icon": "https://github.com/SlicerHeart/SlicerSurfaceMarkup/raw/master/SurfaceMarkupLogo_128.png",
+   "revision": "5307f92586",
+   "modules": [
+    "GridSurfaceMarkups"
+   ],
+   "version": "5307f92586",
+   "wheel": "slicer_ext_surfacemarkup-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "SurfaceWrapSolidify",
+   "homepage": "https://github.com/sebastianandress/Slicer-SurfaceWrapSolidify",
+   "category": "Segmentation",
+   "contributors": [
+    "Sebastian Andress (LMU Munich)"
+   ],
+   "description": "A Segment Editor Extension that filters the surface of a segment using a combination of shrinkwrapping and raycasting.",
+   "depends": [],
+   "screenshots": [
+    "https://raw.githubusercontent.com/sebastianandress/Slicer-SurfaceWrapSolidify/master/Resources/Screenshots/screenshot4.png"
+   ],
+   "icon": "https://github.com/sebastianandress/Slicer-SurfaceWrapSolidify/raw/master/SurfaceWrapSolidify.png",
+   "revision": "600681438b",
+   "modules": [
+    "SegmentEditorWrapSolidify"
+   ],
+   "version": "600681438b",
+   "wheel": "slicer_ext_surfacewrapsolidify-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  },
+  {
+   "name": "VolumeClip",
+   "homepage": "https://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Extensions/VolumeClip",
+   "category": "Segmentation",
+   "contributors": [
+    "Andras Lasso, Matt Lougheed (PerkLab, Queen's University)"
+   ],
+   "description": "Clip volumes with surface models and ROI boxes",
+   "depends": [],
+   "screenshots": [
+    "https://www.slicer.org/slicerWiki/images/4/4c/VolumeClipScreenshot1.png",
+    "https://www.slicer.org/slicerWiki/images/5/57/VolumeClipScreenshot2.png",
+    "https://www.slicer.org/slicerWiki/images/1/1a/VolumeClipScreenshot3.png"
+   ],
+   "icon": "https://www.slicer.org/slicerWiki/images/c/c2/VolumeClipLogo.png",
+   "revision": "8243a3ae4a",
+   "modules": [
+    "VolumeClipWithModel",
+    "VolumeClipWithRoi"
+   ],
+   "version": "8243a3ae4a",
+   "wheel": "slicer_ext_volumeclip-0.1.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl"
+  }
+ ]
+}
