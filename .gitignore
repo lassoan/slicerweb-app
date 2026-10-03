@@ -1,0 +1,3 @@
+# Settings and secrets of the computer that builds this deployment (see README.md): never committed
+/.secrets/
+/local.env

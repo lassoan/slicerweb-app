@@ -1,0 +1,38 @@
+# Publish the SlicerWeb application, https://lassoan.github.io/slicerweb-app/: SlicerWeb with the
+# extensions of extensions.json (by name) and of extensions/.
+#
+# Each channel - latest, or another such as stable or 1.0.0 - is published to a branch of its own,
+# deploy/<channel>, from a runtime release of its own, runtime-<channel>. GitHub Pages serves
+# deploy/latest. The runtime is built and uploaded from a local build (it takes hours and cannot be
+# built here), which then starts this workflow:
+#
+#   build.bat
+#   deploy.bat [channel]
+#
+# (see README.md). slicerwebRef is then the commit of SlicerWeb the runtime was built from. A change
+# of the web application in SlicerWeb publishes deploy/latest again by itself (the workflow of
+# SlicerWeb, with the runtime of runtime-latest).
+name: Publish app
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: "Channel: latest, or another (stable, 1.0.0). Published to branch deploy/<channel> from release runtime-<channel>"
+        default: latest
+      slicerwebRef:
+        description: SlicerWeb branch, tag or commit whose web application is built (the one the runtime was built from)
+        default: main
+
+permissions:
+  contents: write   # read the runtime release, push the site to its branch
+
+jobs:
+  publish:
+    uses: lassoan/SlicerWeb/.github/workflows/publish-app.yml@main
+    with:
+      appRepository: ${{ github.repository }}
+      appBranch: deploy/${{ inputs.channel }}
+      runtime: runtime-${{ inputs.channel }}
+      slicerwebRef: ${{ inputs.slicerwebRef }}
+    secrets: inherit
