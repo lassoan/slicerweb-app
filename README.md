@@ -18,34 +18,32 @@ no history: each build replaces the last one.
 
 A change of the web application in SlicerWeb (a push to its `web/`) publishes `deploy/latest` again
 by itself, with the runtime that `runtime-latest` has. A change of the runtime - VTK, ITK, Slicer,
-the extensions - needs a build and `deploy.bat`.
+the extensions - needs `build` and `deploy` (below).
 
 ## Building and publishing
 
-The build runs in a [SlicerWeb](https://github.com/lassoan/SlicerWeb) checkout next to a checkout
-of this repository. Settings of this computer go in `local.env` (not committed; see
-`local.env.example`): `SW_DIST`, the folder the build is copied to (default:
-`~/SlicerWeb-build/dist-slicerweb-app`, so that it does not replace the build of SlicerWeb itself).
+This checkout holds the configuration only. It is built, published and tried with `slicerweb.py` of
+a [SlicerWeb](https://github.com/lassoan/SlicerWeb) checkout, given a settings file kept outside the
+checkouts that says where everything is on the computer (SlicerWeb's `deployment.env.example`):
 
-On Windows, from this folder (needs Docker, Python, Node.js and the GitHub CLI signed in with
-`gh auth login`):
+```
+SW_SLICERWEB=C:/D/SlicerWeb
+SW_DEPLOYMENT=C:/D/slicerweb-app
+SW_DIST=D:/SlicerWeb-build/dist-slicerweb-app
+SW_PORT=4176
+```
+
+`SW_DIST` is where everything built goes. Needs Docker, Python, Node.js and the GitHub CLI signed in
+with `gh auth login` (`slicerweb.bat` instead of `python slicerweb.py` on Windows):
 
 | | |
 |---|---|
-| `build.bat` | builds everything: SlicerWeb as its checkout is (update it first), and the extensions. Each part is redone only if it changed: minutes, or hours when VTK, ITK or Slicer moved |
-| `build.bat extensions` | builds only the extensions; `build.bat SlicerIGT` only the ones named (in `extensions.json` or `extensions/`) |
-| `serve-local.bat [port]` | serves the build at http://localhost:4176/ to try it; Ctrl+C, then Y, stops it |
-| `stop-local.bat [port]` | stops a local server, also one that has no window to press Ctrl+C in |
-| `deploy.bat [channel]` | publishes the build - nothing is built here - to the channel: `latest` by default (branch `deploy/<channel>`) |
+| `python slicerweb.py <settings> build` | builds everything: SlicerWeb as its checkout is (update it first), and the extensions. Each part is redone only if it changed: minutes, or hours when VTK, ITK or Slicer moved |
+| `python slicerweb.py <settings> build extensions` | builds only the extensions; `build SlicerIGT SlicerRT` only the ones named (in `extensions.json` or `extensions/`) |
+| `python slicerweb.py <settings> serve` | serves the build at http://localhost:4176/ (`SW_PORT`) to try it; Ctrl+C stops it |
+| `python slicerweb.py <settings> stop` | stops that server, also one that has no window to press Ctrl+C in |
+| `python slicerweb.py <settings> deploy [channel]` | publishes the build - nothing is built here - to the channel: `latest` by default (branch `deploy/<channel>`) |
 
 The build records when it was built and from which commits of SlicerWeb and of this repository
 (`wheels/build-info.json`); the application shows it at the end of its menu (top right). The site is
-built from the same SlicerWeb commit as the build, so that commit has to be pushed before
-`deploy.bat`.
-
-The same, on any system, in the SlicerWeb checkout:
-
-```sh
-python build.py --deployment ../slicerweb-app all
-python scripts/publish_runtime.py --deployment ../slicerweb-app --channel latest --publish
-```
+built from the same SlicerWeb commit as the build, so that commit has to be pushed before `deploy`.
