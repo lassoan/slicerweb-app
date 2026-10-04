@@ -29,26 +29,27 @@ the extensions - needs `build` and `deploy` (below).
 ## Building and publishing
 
 This checkout holds the configuration only. It is built, published and tried with `slicerweb.py` of
-a [SlicerWeb](https://github.com/lassoan/SlicerWeb) checkout, given a settings file kept outside the
-checkouts that says where everything is on the computer (SlicerWeb's `deployment.env.example`):
+a [SlicerWeb](https://github.com/lassoan/SlicerWeb) checkout, run in this checkout (or given it
+with `-C <folder>`). Its env file,
+`.env`, says where everything is on the computer (copied from SlicerWeb's `examples/minimal/.env.example`; `.gitignore`
+keeps it out of the repository):
 
 ```
 SW_SLICERWEB=C:/D/SlicerWeb
-SW_DEPLOYMENT=C:/D/slicerweb-app
 SW_DIST=D:/SlicerWeb-build/dist-slicerweb-app
 SW_PORT=4176
 ```
 
 `SW_DIST` is where everything built goes. Needs Docker, Python, Node.js and the GitHub CLI signed in
-with `gh auth login` (`slicerweb.bat` instead of `python slicerweb.py` on Windows):
+with `gh auth login`:
 
 | | |
 |---|---|
-| `python slicerweb.py <settings> build` | builds everything: SlicerWeb as its checkout is (update it first), and the extensions. Each part is redone only if it changed: minutes, or hours when VTK, ITK or Slicer moved |
-| `python slicerweb.py <settings> build extensions` | builds only the extensions; `build SlicerIGT SlicerRT` only the ones named (in `application.json` or `extensions/`) |
-| `python slicerweb.py <settings> serve` | serves the build at http://localhost:4176/ (`SW_PORT`) to try it; Ctrl+C stops it |
-| `python slicerweb.py <settings> stop` | stops that server, also one that has no window to press Ctrl+C in |
-| `python slicerweb.py <settings> deploy [channel]` | publishes the build - nothing is built here - to the channel: `latest` by default (branch `deploy/<channel>`) |
+| `python C:/D/SlicerWeb/slicerweb.py build` | builds everything: SlicerWeb as its checkout is (update it first), and the extensions. Each part is redone only if it changed: minutes, or hours when VTK, ITK or Slicer moved |
+| `python C:/D/SlicerWeb/slicerweb.py build extensions` | builds only the extensions; `build extensions SlicerIGT SlicerRT` only the ones named (in `application.json` or `extensions/`) |
+| `python C:/D/SlicerWeb/slicerweb.py serve` | serves the build at http://localhost:4176/ (`SW_PORT`) to try it; Ctrl+C stops it |
+| `python C:/D/SlicerWeb/slicerweb.py stop` | stops that server, also one that has no window to press Ctrl+C in |
+| `python C:/D/SlicerWeb/slicerweb.py deploy [channel]` | publishes the build - nothing is built here - to the channel: `latest` by default (branch `deploy/<channel>`) |
 
 The build records when it was built and from which commits of SlicerWeb and of this repository
 (`wheels/build-info.json`); the application shows it at the end of its menu (top right). The site is

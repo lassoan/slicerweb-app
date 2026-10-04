@@ -6,8 +6,8 @@
 # deploy/latest. The runtime is built and uploaded from a local build (it takes hours and cannot be
 # built here), which then starts this workflow:
 #
-#   python slicerweb.py <settings file> build
-#   python slicerweb.py <settings file> deploy [channel]
+#   python <SlicerWeb checkout>/slicerweb.py build              (in this checkout)
+#   python <SlicerWeb checkout>/slicerweb.py deploy [channel]
 #
 # (see README.md). slicerwebRef is then the commit of SlicerWeb the runtime was built from. A change
 # of the web application in SlicerWeb publishes deploy/latest again by itself (the workflow of
