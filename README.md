@@ -3,7 +3,7 @@
 The published [SlicerWeb](https://github.com/lassoan/SlicerWeb) application:
 <https://lassoan.github.io/slicerweb-app/>
 
-This branch is the configuration of the build, a SlicerWeb *deployment*
+This branch is the configuration of the application
 ([docs/extensions.md](https://github.com/lassoan/SlicerWeb/blob/main/docs/extensions.md)); the site
 itself is on the branch `deploy/latest`, which GitHub Pages serves. That branch holds one build and
 no history: each build replaces the last one.

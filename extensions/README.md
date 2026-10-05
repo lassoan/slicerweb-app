@@ -1,4 +1,4 @@
-# Extensions of this deployment
+# Extensions of this application
 
 Description files of extensions that SlicerWeb does not describe, one `<Name>.json` each, in the
 format of the [Slicer ExtensionsIndex](https://github.com/Slicer/ExtensionsIndex) (see
