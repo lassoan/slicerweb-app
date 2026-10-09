@@ -9,6 +9,7 @@
       "SimVascular",
       "SlicerHeart",
       "SlicerIGSIO",
+      "SlicerElastix",
       "SlicerIGT",
       "SlicerOpenAnatomy",
       "SlicerRT",
