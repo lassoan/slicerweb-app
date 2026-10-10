@@ -1,0 +1,8 @@
+{
+ "features": {
+  "developerMode": "enabledByDefault",
+  "pythonConsole": true,
+  "extensionsManager": true,
+  "webxr": "disabledByDefault"
+ }
+}
